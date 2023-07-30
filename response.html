@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour Registration Form</title>
+</head>
+<body background=" https://image.slidesdocs.com/responsive-images/background/green-cover-poster-lake-spring-tour-simple-powerpoint-background_6b829156ab__960_540.jpg" >
+
+
+    <h2>Tour Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <fieldset>
+            <legend>Tour Details</legend><br>
+            <label for="tourName">Tour Name:</label><br>
+            <input type="text" id="tourName" name="tourName" required><br>
+
+            <label for="tourDates">Tour Dates:</label><br>
+            <input type="text" id="tourDates" name="tourDates" required><br>
+
+            <label for="tourDuration">Tour Duration:</label><br>
+            <input type="text" id="tourDuration" name="tourDuration" required><br>
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Participant Information</legend><br>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option><br>
+                <option value="Female">Female</option><br>
+                <option value="Other">Other</option><br>
+            </select><br><br>
+
+            <label for="dateOfBirth">Date of Birth:</label><br>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required><br>
+
+            <!-- Add more fields like nationality, passport number (for international tours), contact number, email, address, etc. here -->
+
+        </fieldset>
+
+        <!-- Add more fieldsets for Emergency Contact, Rooming Preferences, Dietary Preferences, Medical Information, Additional Information, Payment Details, Terms and Conditions, Signature, and Date. -->
+<br><br>
+        <a href="pg2.html">submit</a>
+    </form>
+</body>
+</html>
